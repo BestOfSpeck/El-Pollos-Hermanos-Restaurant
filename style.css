@@ -1,10 +1,17 @@
 :root {
   --primary-color: #ffd700;
+  --primary-color-50: #ffd9007b;
   --primary-accent-color: #d32f2f;
   --header-text-color: #1976d2;
   --section-color: #f5f5f5;
   --hover-color: #ff8c00;
   --secundary-color: #0d47a1;
+
+  --primary-font-family: poppins;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -14,24 +21,53 @@
 
 body {
   box-sizing: border-box;
+  font-family: var(--primary-font-family);
+}
+
+h2 {
+  font-size: 38px;
+  margin: 14px 0;
+  color: var(--primary-accent-color);
+  border-bottom: 2px solid var(--secundary-color);
+}
+
+table {
+  width: 200px;
+  padding: 0 0 14px 0;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+td {
+  font-size: 18px;
 }
 
 header {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  height: 100px;
+  gap: 4px;
+  padding: 50px 0;
   background: var(--primary-color);
+  transition: all ease-in-out 90ms;
+}
+
+header.scrolled {
+  padding: 18px 0px !important;
+  background: var(--primary-color-50);
+  backdrop-filter: blur(10px);
 }
 
 header a {
   padding: 4px;
-  font-size: 24px;
+  font-size: 22px;
   text-decoration: none;
   color: var(--header-text-color);
 }
@@ -45,6 +81,20 @@ header a {
   justify-content: center;
 }
 
+.hero-content {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: var(--primary-font-family);
+}
+
 .hero-link {
   width: 150px;
   text-align: center;
@@ -52,7 +102,7 @@ header a {
   text-decoration: none;
   font-size: 18px;
   background: var(--primary-accent-color);
-  margin-top: 150px;
+  margin-top: 80px;
   border-radius: 5px;
   padding: 16px;
   transition: all ease-in-out 100ms;
@@ -60,4 +110,26 @@ header a {
 
 .hero-link:hover {
   background: var(--hover-color);
+  color: #212121;
+}
+
+.opening-time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+}
+
+.journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.journey iframe {
+  background: var(--section-color);
+  border: none;
+  width: 100vw;
+  height: 450px;
 }

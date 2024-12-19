@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Pollos Hermanos</title>
 
+    <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <a href="">Öffungszeiten</a>
+    <!-- Header -->
+    <header id="header">
+      <a href="#opening_time">Öffungszeiten</a>
       <a href="">Speisekarte</a>
       <a href="">Anfahrt</a>
     </header>
 
+    <!-- Hero Section -->
     <section>
       <div class="hero-container">
         <div class="hero-content">
@@ -21,11 +24,67 @@
             src="./images/Los_Pollos_Hermanos_logo.png"
             alt="Restaurant Logo"
           />
-          <p></p>
+          <p>
+            Willkommen bei Los Pollos Hermanos <br />
+            Bester Geschmack, beste Tradition!
+          </p>
         </div>
 
-        <a class="hero-link" href="">Öffnungszeiten ansehen</a>
+        <a class="hero-link" href="#opening_time">Öffnungszeiten ansehen</a>
       </div>
     </section>
+
+    <!-- Öffnungszeiten Section -->
+    <section id="opening_time">
+      <div class="opening-time-container">
+        <h2>Öffnungszeiten</h2>
+        <hr />
+        <table>
+          <tr>
+            <td>Mo</td>
+            <td>06:00 - 20:00</td>
+          </tr>
+          <tr>
+            <td>Di</td>
+            <td>06:00 - 20:00</td>
+          </tr>
+          <tr>
+            <td>Mi</td>
+            <td>06:00 - 20:00</td>
+          </tr>
+          <tr>
+            <td>Do</td>
+            <td>06:00 - 20:00</td>
+          </tr>
+          <tr>
+            <td>Fr</td>
+            <td>06:00 - 20:00</td>
+          </tr>
+          <tr>
+            <td>Sa</td>
+            <td>06:00 - 20:00</td>
+          </tr>
+          <tr>
+            <td>So</td>
+            <td>06:00 - 20:00</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Anfahrt section -->
+    <section>
+      <div class="journey">
+        <h2>Anfahrt</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.6829518090026!2d-106.68885772291749!3d35.0146408728099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220dd72bedf733%3A0xd0672c8833de7ff7!2sTwisters%20Burgers%20and%20Burritos!5e0!3m2!1sde!2sde!4v1734606722676!5m2!1sde!2sde"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
